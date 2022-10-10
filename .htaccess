@@ -1,0 +1,13 @@
+RewriteEngine ON
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+#ROTAS DA VIEW
+RewriteRule ^login public/index.php?url=$1 [L,NC,QSA]
+RewriteRule ^animais themes/pages/page-lista-animais.php?url=$1 [L,NC,QSA]
+RewriteRule ^acessos themes/pages/page-lista-acessos.php?url=$1 [L,NC,QSA]
+RewriteRule ^categorias themes/pages/page-lista-categorias-de-animais.php?url=$1 [L,NC,QSA]
+RewriteRule ^setores themes/pages/page-lista-setores.php?url=$1 [L,NC,QSA]
+RewriteRule ^usuario themes/pages/page-lista-usuarios.php?url=$1 [L,NC,QSA]
+RewriteRule ^fornecedores themes/pages/page-lista-fornecedores.php?url=$1 [L,NC,QSA]
+RewriteRule ^tipos-de-producao themes/pages/page-tipo-producao.php?url=$1 [L,NC,QSA]
+RewriteRule ^producao-animal themes/pages/page-producao-animal.php?url=$1 [L,NC,QSA]

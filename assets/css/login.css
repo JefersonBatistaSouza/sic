@@ -1,0 +1,81 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+}
+.box {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-left {
+    background-color: #048127;
+    color: #fff;
+}
+
+.box-right {
+    background-color: #e5e5e5;
+    color: #000;
+    align-items: center;
+}
+
+.text {
+    width: 80%;
+    font-weight: 400;
+}
+
+.text h1 {
+    font-size: 96px;
+    line-height: 110px;
+}
+
+.text p {
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.logo-ifro{
+    width: 150px;
+    height:200px;
+    background-image: url('../../images/logo-ifro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-form-login{
+    width: 80%;
+}
+.input{
+    font-size:20px;
+    margin-bottom:15px;
+}
+.input input{
+    height:53px;
+    background-color: #cccccc;
+}
+.btn-form-login input[type=button], input[type=submit]{
+    background-color: #048127;
+    width:110px;
+}
+.btn-form-login{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 650px) {
+    .box-left {
+        display:none;
+    }
+    .box-right{
+        width: 100%;
+    }  
+    .logo-ifro{
+        width: 280px;
+        height: 350px;
+    }
+}

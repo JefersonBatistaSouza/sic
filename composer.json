@@ -1,0 +1,12 @@
+{
+    "name": "jefer/sicnew",
+    "authors": [
+        {
+            "name": "JefersonBatistaSouza",
+            "email": "jefersonb@live.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
